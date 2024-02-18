@@ -46,11 +46,11 @@ function ativaScrollSuave() {
 
 ativaScrollSuave();
 
-const botaoTopo = document.querySelector('.scrollTop')
+const botaoTopo = document.querySelector('.scrollTop');
 
 window.addEventListener("scroll", function() {
     botaoTopo.classList.toggle('active', window.scrollY > 450); 
-})
+}) //Adicionar classe 'active' ao utrapassar 450px de scroll no eixo Y;
 
 function backToTop() {
     window.scrollTo({
