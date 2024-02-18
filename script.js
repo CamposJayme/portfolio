@@ -45,3 +45,16 @@ function ativaScrollSuave() {
 }
 
 ativaScrollSuave();
+
+const botaoTopo = document.querySelector('.scrollTop')
+
+window.addEventListener("scroll", function() {
+    botaoTopo.classList.toggle('active', window.scrollY > 450); 
+})
+
+function backToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
